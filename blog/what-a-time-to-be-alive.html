@@ -13,7 +13,7 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
                 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-            line-height: 1.6;
+            line-height: 1.7;
             color: #333;
             background: #fafafa;
         }
@@ -41,7 +41,58 @@
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         p {
-            margin-bottom: 20px;
+            margin-bottom: 18px;
+        }
+        ol {
+            margin: 20px 0 20px 25px;
+        }
+        li {
+            margin-bottom: 14px;
+            line-height: 1.7;
+        }
+        li a {
+            color: #0066cc;
+        }
+        .highlight {
+            background: #f0f7ff;
+            padding: 20px;
+            border-left: 3px solid #0066cc;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+        .highlight-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 8px 0;
+            font-size: 0.95em;
+            color: #555;
+        }
+        .highlight-label {
+            font-weight: 500;
+        }
+        .disclaimer {
+            background: #fff9e6;
+            padding: 18px;
+            border-left: 3px solid #ffa500;
+            margin: 25px 0;
+            border-radius: 4px;
+            font-size: 0.95em;
+            color: #333;
+        }
+        .tags {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .tag {
+            background: #f0f0f0;
+            color: #666;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9em;
         }
         a {
             color: #0066cc;
@@ -72,11 +123,50 @@
 
         <article>
             <p>
-                Replace this with your blog post content. This is a simple HTML template for your blog post.
+                As a software engineer, I'm getting very used to the day-to-day productivity gains and occasional time sinks of AI. But lately, I've been struck by something deeper: the sheer contextual breadth of these models.
             </p>
+
             <p>
-                You can add paragraphs, links, and other HTML elements as needed.
+                We are talking about a knowledge base that spans from the advent of language to the latest immigration codes.
             </p>
+
+            <h2>Two Examples</h2>
+
+            <ol>
+                <li>I prompted a 1,500-year-old Sanskrit hymn's title, and it built a word-for-word translation of the poem: <a href="https://suryapandian.github.io/Sanskrit/shloka/guru-ashtakam.html" target="_blank">guru-ashtakam.html</a></li>
+                <li>I prompted "Immigration policy in country X," and it built a compliance checker from scratch: <a href="https://uk-ilr-citizenship.netlify.app/" target="_blank">uk-ilr-citizenship.netlify.app</a></li>
+            </ol>
+
+            <p>
+                <strong>The kicker?</strong> I didn't feed it the policy or the verses. It already "knew".
+            </p>
+
+            <div class="highlight">
+                <div class="highlight-row">
+                    <span class="highlight-label">Cost:</span>
+                    <span>&lt; $4</span>
+                </div>
+                <div class="highlight-row">
+                    <span class="highlight-label">Time invested:</span>
+                    <span>2–3 hours</span>
+                </div>
+                <div class="highlight-row">
+                    <span class="highlight-label">Without AI:</span>
+                    <span>1+ year (or 1 week fulltime)</span>
+                </div>
+            </div>
+
+            <div class="disclaimer">
+                <strong>Disclaimer:</strong> Yes, AI hallucinates. We still need to be the "human in the loop" to double-check every line. But even with that caveat, I can't help but think... what a time to be alive. Woah!
+            </div>
+
+            <div class="tags">
+                <span class="tag">#AI</span>
+                <span class="tag">#SoftwareEngineering</span>
+                <span class="tag">#LLM</span>
+                <span class="tag">#Sanskrit</span>
+                <span class="tag">#Poems</span>
+            </div>
         </article>
     </div>
 </body>
