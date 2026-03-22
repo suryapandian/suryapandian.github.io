@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>suryapandian</title>
+    <title>What a Time to Be Alive</title>
     <style>
         * {
             margin: 0;
@@ -22,65 +22,62 @@
             margin: 0 auto;
             padding: 60px 20px;
         }
+        header {
+            margin-bottom: 40px;
+        }
         h1 {
             font-size: 2.5em;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            line-height: 1.2;
         }
-        .bio {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            margin-bottom: 40px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        .meta {
+            color: #666;
+            font-size: 0.95em;
         }
-        .posts {
+        article {
             background: white;
-            padding: 30px;
+            padding: 40px;
             border-radius: 8px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
-        .posts h2 {
-            font-size: 1.3em;
+        p {
             margin-bottom: 20px;
         }
-        .post-item {
-            padding: 15px 0;
-            border-bottom: 1px solid #eee;
-        }
-        .post-item:last-child {
-            border-bottom: none;
-        }
-        .post-link {
-            display: block;
+        a {
             color: #0066cc;
             text-decoration: none;
-            font-weight: 500;
-            margin-bottom: 5px;
         }
-        .post-link:hover {
+        a:hover {
             text-decoration: underline;
         }
-        .post-date {
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
             color: #666;
             font-size: 0.9em;
+        }
+        .back-link:hover {
+            color: #0066cc;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>suryapandian</h1>
+        <a href="/" class="back-link">← Back to home</a>
 
-        <div class="bio">
-            <p>Welcome to my personal site. I write about things that interest me.</p>
-        </div>
+        <header>
+            <h1>What a Time to Be Alive</h1>
+            <p class="meta">Published on March 22, 2026</p>
+        </header>
 
-        <div class="posts">
-            <h2>Blog Posts</h2>
-            <div class="post-item">
-                <a href="/blog/what-a-time-to-be-alive.html" class="post-link">What a Time to Be Alive</a>
-                <p class="post-date">March 22, 2026</p>
-            </div>
-        </div>
+        <article>
+            <p>
+                Replace this with your blog post content. This is a simple HTML template for your blog post.
+            </p>
+            <p>
+                You can add paragraphs, links, and other HTML elements as needed.
+            </p>
+        </article>
     </div>
 </body>
 </html>
