@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Surya Pandian</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: #fafafa;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        header {
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+        .summary {
+            color: #666;
+            font-style: italic;
+        }
+        article {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        section:last-child {
+            margin-bottom: 0;
+        }
+        h2 {
+            font-size: 1.3em;
+            color: #0066cc;
+            margin-bottom: 15px;
+        }
+        .job {
+            margin-bottom: 25px;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .job-title {
+            font-weight: 600;
+        }
+        .job-meta {
+            color: #666;
+            font-size: 0.9em;
+        }
+        h3 {
+            font-size: 1em;
+            font-style: italic;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        ul {
+            margin: 8px 0 0 25px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .back-link:hover {
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-link">← Back to home</a>
+
+        <header>
+            <h1>Surya Pandian</h1>
+            <p class="summary">Software developer with expertise in Rust, Go, SQL, Kubernetes and AWS.</p>
+        </header>
+
+        <article>
+            <section>
+                <h2>Experience</h2>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Senior Software Developer at TrueLayer</span>
+                        <span class="job-meta">London, Jul 2021 - Present</span>
+                    </div>
+                    <h3>Senior Software Developer in Developer Productivity</h3>
+                    <ul>
+                        <li>Migrated RabbitMQ single classic cluster to Quorum multi cluster</li>
+                        <li>Migrated Kubernetes cluster from Rancher to EKS with zero downtime</li>
+                        <li>Enabled continuous delivery of all the applications in the organisation into Kubernetes cluster via Flux</li>
+                        <li>Built many in-house binaries and tools to improve developer productivity</li>
+                    </ul>
+                    <h3>Software Developer in CoreBanking Team</h3>
+                    <ul>
+                        <li>Migrated transaction data in multiple ledgers to a unified ledger with zero downtime</li>
+                        <li>Migrated DB credentials accessed by applications from k8s secrets to Vault with zero downtime</li>
+                        <li>Improved the performance of services by optimising SQL queries, and improved latency of services by migrating from RPC over RMQ to gRPC</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Senior Software Developer at Qube Cinema</span>
+                        <span class="job-meta">Chennai (India), Apr 2018 - Jun 2021</span>
+                    </div>
+                    <ul>
+                        <li>Application developer at Qube Slate and Qube Wire, products that schedule and deliver advertisement and movie content to theatres across the world</li>
+                        <li>Partitioned data with millions of records with zero downtime</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Software Developer at Voonik</span>
+                        <span class="job-meta">Bangalore (India), Jan 2015 - Mar 2018</span>
+                    </div>
+                    <ul>
+                        <li>Built, deployed, and scaled event-driven microservices from the legacy code</li>
+                        <li>Set up a master-slave database in production and redirected read requests from applications to the slave database</li>
+                        <li>Set up and trained machine learning models powered by Nvidia toolchains</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Languages: Go, Rust, Ruby on Rails</li>
+                    <li>Storage: PostgreSQL, MySQL, Redis, Elasticsearch</li>
+                    <li>Queues: RMQ, SQS</li>
+                    <li>CI/CD: Kubernetes, AWS, GitHub Actions, CircleCI, Docker, Terraform</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <div class="job-header">
+                    <span>Bachelors in Electronics and Communication at MEPCO</span>
+                    <span class="job-meta">Sivakasi (India), Aug 2011 - Jan 2015</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>Certifications</h2>
+                <p>CCNA, CKAD</p>
+            </section>
+        </article>
+    </div>
+</body>
+</html>
