@@ -64,6 +64,16 @@
             color: #666;
             font-size: 0.9em;
         }
+        .video-embed {
+            margin-top: 12px;
+            aspect-ratio: 16 / 9;
+        }
+        .video-embed iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 8px;
+        }
         .more {
             background: #f0f7ff;
             border-left: 3px solid #0066cc;
@@ -194,6 +204,21 @@
             <div class="post-item">
                 <a href="/blog/what-a-time-to-be-alive.html" class="post-link">What a Time to Be Alive</a>
                 <p class="post-date">March 22, 2026</p>
+            </div>
+            <div class="post-item">
+                <a href="https://truelayer.com/blog/culture/truetalk-with-surya-pandian/" target="_blank" class="post-link">TrueTalk with Surya Pandian</a>
+                <p class="post-date">August 13, 2025 · TrueLayer Blog</p>
+            </div>
+            <div class="post-item">
+                <a href="https://www.youtube.com/watch?t=5686&v=tb4OrbrvveM" target="_blank" class="post-link">Kubernetes cluster migration</a>
+                <p class="post-date">October 2024 · Cloud Native London</p>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube-nocookie.com/embed/tb4OrbrvveM?start=5686" title="Kubernetes cluster migration - Cloud Native London" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="post-item">
+                <a href="https://www.cncf.io/blog/2023/03/09/flux2-migration-how-we-dropped-our-cpu-usage-by-nearly-40x/" target="_blank" class="post-link">Flux2 migration: how we dropped our CPU usage by nearly 40x</a>
+                <p class="post-date">March 9, 2023 · CNCF Blog</p>
             </div>
         </div>
 
